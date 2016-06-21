@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9058" systemVersion="15B30a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="48h-g6-taE">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9048"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Team View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="TeamViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="kI8-OC-IwE"/>
                         <viewControllerLayoutGuide type="bottom" id="SnP-LE-5rS"/>
@@ -19,41 +19,52 @@
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Abs-Hu-ybb">
                                 <rect key="frame" x="24" y="138" width="110" height="120"/>
-                                <animations/>
                                 <accessibility key="accessibilityConfiguration" label="alImage"/>
                                 <state key="normal" backgroundImage="al">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="topLeftButtonTapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="rzK-49-f12"/>
+                                    <segue destination="mKz-5K-FLT" kind="show" identifier="Al" id="m6l-Jy-Alc"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zUU-Aq-7b6">
                                 <rect key="frame" x="174" y="138" width="110" height="120"/>
-                                <animations/>
                                 <accessibility key="accessibilityConfiguration" label="joeImage"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal" backgroundImage="joe">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="topRightButtonTapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="c1l-i9-4Lz"/>
+                                    <segue destination="mKz-5K-FLT" kind="show" identifier="aryaStarkSegue" id="ob1-Up-8Ec"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aIu-yK-Br8">
                                 <rect key="frame" x="174" y="308" width="110" height="120"/>
-                                <animations/>
                                 <accessibility key="accessibilityConfiguration" label="aviImage"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal" backgroundImage="avi">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="bottomRightButtonTapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="piJ-oN-7DE"/>
+                                    <segue destination="mKz-5K-FLT" kind="show" identifier="sansaStarkSegue " id="Gm0-jt-2JU"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cqs-U2-von">
                                 <rect key="frame" x="24" y="308" width="110" height="120"/>
-                                <animations/>
                                 <accessibility key="accessibilityConfiguration" label="chrisImage"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal" backgroundImage="chris">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="bottomLeftButtonTapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="rlY-zv-z9i"/>
+                                    <segue destination="mKz-5K-FLT" kind="show" identifier="jonSnowSegue" id="7bi-wp-OBW"/>
+                                </connections>
                             </button>
                         </subviews>
-                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="Ghh-n8-KQ0"/>
@@ -61,12 +72,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="920.625" y="104.57746478873239"/>
+            <point key="canvasLocation" x="1732.5" y="104.5"/>
         </scene>
-        <!--View Controller-->
+        <!--Team Detail View Controller-->
         <scene sceneID="mwV-A3-UA3">
             <objects>
-                <viewController id="mKz-5K-FLT" sceneMemberID="viewController">
+                <viewController id="mKz-5K-FLT" customClass="TeamDetailViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="xRX-zw-Rpb"/>
                         <viewControllerLayoutGuide type="bottom" id="F21-Po-pe8"/>
@@ -77,46 +88,66 @@
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="al" translatesAutoresizingMaskIntoConstraints="NO" id="UfY-cI-eh3">
                                 <rect key="frame" x="56" y="84" width="209" height="208"/>
-                                <animations/>
                             </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Al" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bqA-LW-Bdw">
                                 <rect key="frame" x="56" y="316" width="209" height="21"/>
-                                <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="5551212" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uag-Kv-B1M">
                                 <rect key="frame" x="56" y="345" width="209" height="21"/>
-                                <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Detroit, Mi" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AUo-h2-VFS">
                                 <rect key="frame" x="56" y="374" width="209" height="21"/>
-                                <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="The Beatles" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Pf-6J-Pt8">
                                 <rect key="frame" x="56" y="403" width="209" height="21"/>
-                                <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="4af-HY-tdv"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="cityAndState" destination="AUo-h2-VFS" id="xRA-LP-2eG"/>
+                        <outlet property="favoriteBand" destination="9Pf-6J-Pt8" id="hTn-te-c1h"/>
+                        <outlet property="memberPhoto" destination="UfY-cI-eh3" id="FbG-Yx-B04"/>
+                        <outlet property="name" destination="bqA-LW-Bdw" id="cZi-rQ-9wi"/>
+                        <outlet property="phoneNumber" destination="Uag-Kv-B1M" id="cTz-kH-2Tc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="80I-JA-Vhy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1383.5" y="104.5"/>
+            <point key="canvasLocation" x="2195.5" y="104.5"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="d5Y-TQ-xnZ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="48h-g6-taE" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="z8X-ma-ACC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="c21-Kt-3rf"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ccg-Ev-Mid" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="920" y="104"/>
         </scene>
     </scenes>
     <resources>
@@ -125,4 +156,7 @@
         <image name="chris" width="570" height="640"/>
         <image name="joe" width="300" height="331"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="m6l-Jy-Alc"/>
+    </inferredMetricsTieBreakers>
 </document>

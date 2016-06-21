@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1BAA05B51D172A5A00D933FE /* TeamViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BAA05B41D172A5A00D933FE /* TeamViewController.m */; };
+		1BAA05B81D172A8200D933FE /* TeamDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BAA05B71D172A8200D933FE /* TeamDetailViewController.m */; };
+		1BAA05BB1D172AA400D933FE /* TeamMember.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BAA05BA1D172AA400D933FE /* TeamMember.m */; };
 		44239E021950D50F008E9E68 /* NavigationControllersSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 44239E011950D50F008E9E68 /* NavigationControllersSpec.m */; };
 		44F38FE918B3F4650012314D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44F38FE818B3F4650012314D /* Foundation.framework */; };
 		44F38FEB18B3F4650012314D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44F38FEA18B3F4650012314D /* CoreGraphics.framework */; };
@@ -36,6 +39,12 @@
 /* Begin PBXFileReference section */
 		10B9B3F904CE21FB0A5F4C8F /* Pods-NavigationControllersTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NavigationControllersTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-NavigationControllersTests/Pods-NavigationControllersTests.release.xcconfig"; sourceTree = "<group>"; };
 		1B110E9DA3FF433A96E2A505 /* libPods-NavigationControllersTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NavigationControllersTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1BAA05B31D172A5A00D933FE /* TeamViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TeamViewController.h; sourceTree = "<group>"; };
+		1BAA05B41D172A5A00D933FE /* TeamViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TeamViewController.m; sourceTree = "<group>"; };
+		1BAA05B61D172A8200D933FE /* TeamDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TeamDetailViewController.h; sourceTree = "<group>"; };
+		1BAA05B71D172A8200D933FE /* TeamDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TeamDetailViewController.m; sourceTree = "<group>"; };
+		1BAA05B91D172AA400D933FE /* TeamMember.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TeamMember.h; sourceTree = "<group>"; };
+		1BAA05BA1D172AA400D933FE /* TeamMember.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TeamMember.m; sourceTree = "<group>"; };
 		44239E011950D50F008E9E68 /* NavigationControllersSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationControllersSpec.m; sourceTree = "<group>"; };
 		44F38FE518B3F4650012314D /* NavigationControllers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NavigationControllers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		44F38FE818B3F4650012314D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -118,6 +127,12 @@
 			children = (
 				44F38FF718B3F4650012314D /* AppDelegate.h */,
 				44F38FF818B3F4650012314D /* AppDelegate.m */,
+				1BAA05B31D172A5A00D933FE /* TeamViewController.h */,
+				1BAA05B41D172A5A00D933FE /* TeamViewController.m */,
+				1BAA05B61D172A8200D933FE /* TeamDetailViewController.h */,
+				1BAA05B71D172A8200D933FE /* TeamDetailViewController.m */,
+				1BAA05B91D172AA400D933FE /* TeamMember.h */,
+				1BAA05BA1D172AA400D933FE /* TeamMember.m */,
 				44F38FFA18B3F4650012314D /* Main.storyboard */,
 				44F3900018B3F4650012314D /* Images.xcassets */,
 				44F38FEF18B3F4650012314D /* Supporting Files */,
@@ -296,6 +311,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				44F38FF918B3F4650012314D /* AppDelegate.m in Sources */,
+				1BAA05B51D172A5A00D933FE /* TeamViewController.m in Sources */,
+				1BAA05BB1D172AA400D933FE /* TeamMember.m in Sources */,
+				1BAA05B81D172A8200D933FE /* TeamDetailViewController.m in Sources */,
 				44F38FF518B3F4650012314D /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
